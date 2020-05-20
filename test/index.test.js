@@ -9,22 +9,28 @@ test('String should be reversed', () => {
   expect(AppTest.reverseString('denis')).toEqual('sined');
 });
 
-test ('It should add two numbers', () => {
+test('It should add two numbers', () => {
   expect(calculator.add(2, 3)).toEqual(5);
 });
 
-test ('It should substract two numbers', () => {
+test('It should substract two numbers', () => {
   expect(calculator.substract(3, 2)).toEqual(1);
 });
 
-test ('It should divide two numbers', () => {
+test('It should divide two numbers', () => {
   expect(calculator.divide(4, 2)).toEqual(2);
 });
 
-test ('It should multiply two numbers', () => {
+test('It should multiply two numbers', () => {
   expect(calculator.multiply(2, 3)).toEqual(6);
 });
 
 test('It should encrypt the text', () => {
   expect(AppTest.caesarCypher('HeLlo', 2)).toEqual('JgNnq');
-})
+});
+
+test('should return an object', () => {
+  expect(AppTest.analyze([1, 8, 3, 4, 2, 6])).toMatchObject({
+    average: 4, min: 1, max: 8, length: 6,
+  });
+});
