@@ -1,0 +1,37 @@
+{
+  "name": "test-practice",
+  "version": "1.0.0",
+  "description": "Testing practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlukaDenis/test-practice-js.git"
+  },
+  "keywords": [
+    "Testing"
+  ],
+  "author": "Denis Oluka & Josue Brigido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlukaDenis/test-practice-js/issues"
+  },
+  "homepage": "https://github.com/OlukaDenis/test-practice-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "jest": "^26.0.1",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
